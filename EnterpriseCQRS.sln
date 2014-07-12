@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "front", "front", "{275A6D74-378D-448E-9F71-0B396194A3BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{15AF248F-1879-4DC4-9F87-806F9B3487EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2AABADF1-4E32-491D-BF4C-3E73004009CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "front", "front", "{14425435-4E86-49AB-978F-1C73F9CB5570}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{36FDE0F1-8EB4-4775-A0C0-B0E983CC0B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseCQRS", "front\EnterpriseCQRS\EnterpriseCQRS.csproj", "{43FFFF1A-F542-4A98-96DC-83CAE90FDD00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseCQRS.Tests", "tests\front\EnterpriseCQRS.Tests\EnterpriseCQRS.Tests.csproj", "{34AF102D-3898-47A6-9E86-306EF91D141B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8A32AC71-44F5-402D-AA9B-8C5CBE3E26E0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseCQRS.Front.Windsor", "front\EnterpriseCQRS.Front.Windsor\EnterpriseCQRS.Front.Windsor.csproj", "{E238C045-EAC0-45AF-A73C-E858AE6C5E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseCQRS.Front.Windsor.Tests", "tests\front\EnterpriseCQRS.Front.Windsor.Tests\EnterpriseCQRS.Front.Windsor.Tests.csproj", "{6AF088E4-8393-4B3C-BC34-C3831873F66B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43FFFF1A-F542-4A98-96DC-83CAE90FDD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43FFFF1A-F542-4A98-96DC-83CAE90FDD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43FFFF1A-F542-4A98-96DC-83CAE90FDD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43FFFF1A-F542-4A98-96DC-83CAE90FDD00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34AF102D-3898-47A6-9E86-306EF91D141B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34AF102D-3898-47A6-9E86-306EF91D141B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34AF102D-3898-47A6-9E86-306EF91D141B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34AF102D-3898-47A6-9E86-306EF91D141B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E238C045-EAC0-45AF-A73C-E858AE6C5E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E238C045-EAC0-45AF-A73C-E858AE6C5E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E238C045-EAC0-45AF-A73C-E858AE6C5E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E238C045-EAC0-45AF-A73C-E858AE6C5E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF088E4-8393-4B3C-BC34-C3831873F66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF088E4-8393-4B3C-BC34-C3831873F66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF088E4-8393-4B3C-BC34-C3831873F66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF088E4-8393-4B3C-BC34-C3831873F66B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14425435-4E86-49AB-978F-1C73F9CB5570} = {2AABADF1-4E32-491D-BF4C-3E73004009CF}
+		{36FDE0F1-8EB4-4775-A0C0-B0E983CC0B72} = {2AABADF1-4E32-491D-BF4C-3E73004009CF}
+		{43FFFF1A-F542-4A98-96DC-83CAE90FDD00} = {275A6D74-378D-448E-9F71-0B396194A3BD}
+		{34AF102D-3898-47A6-9E86-306EF91D141B} = {14425435-4E86-49AB-978F-1C73F9CB5570}
+		{E238C045-EAC0-45AF-A73C-E858AE6C5E9E} = {275A6D74-378D-448E-9F71-0B396194A3BD}
+		{6AF088E4-8393-4B3C-BC34-C3831873F66B} = {14425435-4E86-49AB-978F-1C73F9CB5570}
+	EndGlobalSection
+EndGlobal
