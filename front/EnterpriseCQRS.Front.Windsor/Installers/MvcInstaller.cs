@@ -23,10 +23,13 @@ namespace EnterpriseCQRS.Front.Windsor.Installers
 
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
+            // register all the controllers of type MVC within an assembly
             container.Register(Classes
                 .FromAssembly(scanningAssembly)
                 .BasedOn<IController>()
                 .LifestyleTransient());
+                
+            // setup the custom Mvc controller factory
             var controllerFactory = new MvcControllerFactory(container.Kernel);
             ControllerBuilder.Current.SetControllerFactory(controllerFactory);
         }
